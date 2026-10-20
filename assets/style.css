@@ -161,6 +161,14 @@ h2 { font-size: clamp(28px, 3.6vw, 40px); line-height: 1.15; letter-spacing: -0.
 .card h3 { margin: 0 0 6px; font-size: 18px; }
 .card p { margin: 0; color: var(--muted); font-size: 15.5px; }
 
+/* Video */
+.video { margin: 40px 0 0; }
+.video video {
+  display: block; width: 100%; height: auto; aspect-ratio: 16 / 9;
+  border-radius: var(--radius); background: #050b18; box-shadow: var(--shadow);
+}
+.video figcaption { color: var(--muted); font-size: 15px; margin-top: 10px; }
+
 /* Gallery */
 .gallery {
   display: grid; grid-auto-flow: column; grid-auto-columns: min(230px, 62vw); gap: 18px;
