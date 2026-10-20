@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MemoryAI — L'AI privata sul tuo telefono, funziona anche offline</title>
+  <meta name="description" content="MemoryAI fa girare l'intelligenza artificiale direttamente sul telefono. Funziona senza internet, le chat restano sul dispositivo e c'è una Modalità Bambini con PIN del genitore. Gratis, senza account, senza pubblicità.">
+  <meta name="theme-color" content="#0b1a3a">
+  <link rel="icon" type="image/png" sizes="64x64" href="../assets/img/icon-64.png">
+  <link rel="apple-touch-icon" href="../assets/img/icon-192.png">
+  <link rel="canonical" href="https://alessandrofacchini.github.io/memoryai/it/">
+  <link rel="alternate" hreflang="en" href="https://alessandrofacchini.github.io/memoryai/">
+  <link rel="alternate" hreflang="it" href="https://alessandrofacchini.github.io/memoryai/it/">
+  <link rel="alternate" hreflang="x-default" href="https://alessandrofacchini.github.io/memoryai/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alessandrofacchini.github.io/memoryai/it/">
+  <meta property="og:title" content="MemoryAI — L'AI privata sul tuo telefono, funziona anche offline">
+  <meta property="og:description" content="Un'AI che gira sul telefono: funziona in modalità aereo, le chat restano sul dispositivo, con una Modalità Bambini. Gratis, senza account, senza pubblicità.">
+  <meta property="og:image" content="https://alessandrofacchini.github.io/memoryai/assets/img/icon-512.png">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<!-- Icons: Feather Icons (MIT licence) -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="i-wifi-off" viewBox="0 0 24 24"><line x1="1" y1="1" x2="23" y2="23"/><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"/><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/><path d="M10.71 5.05A16 16 0 0 1 22.58 9"/><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+  <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></symbol>
+  <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></symbol>
+</svg>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="../assets/img/icon-192.png" alt="" width="34" height="34">MemoryAI</a>
+    <nav class="nav" aria-label="Principale">
+      <a href="#offline">Offline</a>
+      <a href="#bambini">Modalità Bambini</a>
+      <a href="#funzioni">Funzioni</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#domande">Domande</a>
+      <a class="lang" href="../index.html" hreflang="en" lang="en">English</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <ul class="eyebrow">
+          <li>Gratis</li>
+          <li>Senza account</li>
+          <li>Senza pubblicità</li>
+          <li>6 lingue</li>
+        </ul>
+        <h1 id="hero-title">L'AI privata che vive <span>sul tuo telefono</span></h1>
+        <p class="lead">MemoryAI fa girare i modelli di intelligenza artificiale direttamente sul telefono. Funziona anche in modalità aereo, le tue chat restano sul dispositivo e la Modalità Bambini la rende più sicura per i più piccoli.</p>
+        <div class="stores">
+          <a class="btn btn-light" href="https://play.google.com/store/apps/details?id=com.ts.memoryai">
+            <svg class="ic" aria-hidden="true"><use href="#i-play"/></svg>
+            <span><small>Disponibile su</small><span class="t">Google Play</span></span>
+          </a>
+          <a class="btn btn-ghost" href="https://apps.apple.com/app/memoryai/id6758719586">
+            <svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>
+            <span><small>Scarica su</small><span class="t">App Store</span></span>
+          </a>
+        </div>
+        <p class="req">Android 9 o successivo · iPhone con iOS 16.4 o successivo</p>
+      </div>
+      <div class="phone">
+        <img src="../assets/img/shots/shot-2.webp" alt="MemoryAI su un telefono Android" width="360" height="780">
+      </div>
+    </div>
+  </section>
+
+  <section id="offline" aria-labelledby="offline-title">
+    <div class="wrap split">
+      <div>
+        <p class="kicker">Funziona offline</p>
+        <h2 id="offline-title">Niente campo? Risponde lo stesso.</h2>
+        <p class="intro">Scarichi un modello una volta e MemoryAI risponde senza connessione: in aereo, in metropolitana, in montagna. L'abbiamo provata in modalità aereo: l'app si è avviata, ha caricato il modello e ha risposto, con Wi-Fi e dati mobili spenti.</p>
+      </div>
+      <div class="panel offline-card">
+        <div class="row">
+          <span class="badge"><svg class="ic" aria-hidden="true"><use href="#i-wifi-off"/></svg></span>
+          <div><h3>Modalità aereo attiva</h3><p>Le chat e le risposte sui tuoi documenti arrivano dal modello sul telefono.</p></div>
+        </div>
+        <div class="row">
+          <span class="badge"><svg class="ic" aria-hidden="true"><use href="#i-cpu"/></svg></span>
+          <div><h3>L'AI gira sul tuo dispositivo</h3><p>Nessun server nel cloud legge le tue domande: il modello lavora sul processore del telefono.</p></div>
+        </div>
+        <div class="row">
+          <span class="badge"><svg class="ic" aria-hidden="true"><use href="#i-lock"/></svg></span>
+          <div><h3>Nessuna registrazione</h3><p>Apri l'app, scegli un modello e inizi. Niente account, niente email, niente password.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bambini" class="alt kid" aria-labelledby="kid-title">
+    <div class="wrap split">
+      <div>
+        <p class="kicker">Modalità Bambini</p>
+        <h2 id="kid-title">Un'AI più sicura per i bambini</h2>
+        <p class="intro">Attivi la Modalità Bambini con un PIN da genitore e passi il telefono. Tuo figlio può fare domande, imparare e giocare con le parole, mentre le impostazioni restano bloccate.</p>
+        <blockquote class="quote">«Mi dispiace, non posso parlarne. Chiedi a un genitore o a un insegnante.»</blockquote>
+        <p class="note">La risposta gentile che la Modalità Bambini dà alle domande su argomenti non adatti.</p>
+      </div>
+      <div class="panel">
+        <ul class="checks">
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Un PIN del genitore per attivarla e disattivarla, con una pausa dopo troppi tentativi sbagliati.</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Modello e impostazioni bloccati: niente cambio di modello, niente prompt di sistema, niente cancellazione delle chat.</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Filtri per parole e argomenti non adatti in tutte e sei le lingue dell'app.</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Modelli di conversazione pensati per i bambini, e memoria disattivata.</span></li>
+        </ul>
+        <p class="note">La Modalità Bambini riduce l'esposizione a contenuti non sicuri, ma non la elimina. Resta vicino a tuo figlio mentre la usa.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="funzioni" aria-labelledby="features-title">
+    <div class="wrap">
+      <p class="kicker">Funzioni</p>
+      <h2 id="features-title">Tutto quello che ti aspetti, sul tuo telefono</h2>
+      <p class="intro">Parlaci, dalle i tuoi file, lascia che ricordi quello che conta per te e scegli il modello adatto al tuo telefono.</p>
+      <div class="grid">
+        <article class="card">
+          <svg class="ic" aria-hidden="true"><use href="#i-mic"/></svg>
+          <h3>Parla o scrivi</h3>
+          <p>Conversa a voce senza toccare lo schermo, oppure scrivi come sempre.</p>
+        </article>
+        <article class="card">
+          <svg class="ic" aria-hidden="true"><use href="#i-file"/></svg>
+          <h3>Fai domande ai tuoi documenti</h3>
+          <p>Aggiungi file PDF, TXT e MD o foto e fai domande sul contenuto. Vengono letti sul telefono, non caricati online.</p>
+        </article>
+        <article class="card">
+          <svg class="ic" aria-hidden="true"><use href="#i-image"/></svg>
+          <h3>Capisce le immagini</h3>
+          <p>Con i modelli che supportano le immagini, chiedi una descrizione di una foto.</p>
+        </article>
+        <article class="card">
+          <svg class="ic" aria-hidden="true"><use href="#i-bookmark"/></svg>
+          <h3>Una memoria che controlli tu</h3>
+          <p>Facoltativa: MemoryAI può ricordare quello che le dici, sul telefono. Puoi leggere e cancellare ogni ricordo.</p>
+        </article>
+        <article class="card">
+          <svg class="ic" aria-hidden="true"><use href="#i-cpu"/></svg>
+          <h3>Scegli il modello</h3>
+          <p>Modelli Gemma, Qwen, Llama, Phi e DeepSeek, oppure importa il tuo file GGUF.</p>
+        </article>
+        <article class="card">
+          <svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg>
+          <h3>Sei lingue</h3>
+          <p>Italiano, inglese, tedesco, spagnolo, francese e portoghese.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" aria-labelledby="shots-title">
+    <div class="wrap">
+      <p class="kicker">Schermate</p>
+      <h2 id="shots-title">Guardala all'opera</h2>
+      <div class="gallery">
+        <figure><img src="../assets/img/shots/shot-1.webp" alt="Schermata di MemoryAI 1" loading="lazy"></figure>
+        <figure><img src="../assets/img/shots/shot-2.webp" alt="Schermata di MemoryAI 2" loading="lazy"></figure>
+        <figure><img src="../assets/img/shots/shot-3.webp" alt="Schermata di MemoryAI 3" loading="lazy"></figure>
+        <figure><img src="../assets/img/shots/shot-4.webp" alt="Schermata di MemoryAI 4" loading="lazy"></figure>
+        <figure><img src="../assets/img/shots/shot-5.webp" alt="Schermata di MemoryAI 5" loading="lazy"></figure>
+        <figure><img src="../assets/img/shots/shot-6.webp" alt="Schermata di MemoryAI 6" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="privacy" aria-labelledby="privacy-title">
+    <div class="wrap split">
+      <div>
+        <p class="kicker">Privacy</p>
+        <h2 id="privacy-title">Le tue chat restano sul telefono</h2>
+        <p class="intro">Conversazioni, documenti e ricordi vengono elaborati e salvati sul tuo dispositivo. Non c'è nessun account da creare e non c'è pubblicità.</p>
+      </div>
+      <div class="panel">
+        <p style="margin-top:0">Per migliorare l'app usiamo statistiche d'uso legate a un identificativo casuale dell'app, rapporti sugli arresti anomali e, se le consenti, le notifiche. Mai il contenuto delle tue chat.</p>
+        <p style="margin-bottom:0">L'informativa elenca esattamente cosa viene inviato e a chi: <a href="https://alessandrofacchini.github.io/memoryai-privacy/privacy-policy-it">leggi l'informativa sulla privacy</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="domande" class="alt" aria-labelledby="faq-title">
+    <div class="wrap">
+      <p class="kicker">Domande</p>
+      <h2 id="faq-title">Domande frequenti</h2>
+      <div class="faq">
+        <details>
+          <summary>MemoryAI è davvero gratis?</summary>
+          <p>Sì. Niente abbonamento, niente acquisti in app e niente pubblicità.</p>
+        </details>
+        <details>
+          <summary>Serve una connessione a internet?</summary>
+          <p>Solo per scaricare un modello e per servizi facoltativi come le notifiche. Una volta che il modello è sul telefono, puoi chattare e fare domande sui tuoi documenti senza connessione.</p>
+        </details>
+        <details>
+          <summary>Su quali telefoni funziona?</summary>
+          <p>Android 9 o successivo e iPhone con iOS 16.4 o successivo. I modelli occupano spazio, qualche gigabyte per iniziare, e i telefoni con più memoria (RAM) possono usare modelli più grandi.</p>
+        </details>
+        <details>
+          <summary>La Modalità Bambini è completamente sicura?</summary>
+          <p>Nessun filtro è perfetto. La Modalità Bambini riduce l'esposizione a contenuti non sicuri, ma non la elimina. Resta vicino a tuo figlio mentre la usa.</p>
+        </details>
+        <details>
+          <summary>Dove vengono salvate le chat?</summary>
+          <p>Sul tuo telefono. Se usi l'opzione di backup, una copia va sul tuo Google Drive o su iCloud.</p>
+        </details>
+        <details>
+          <summary>Chi sviluppa MemoryAI?</summary>
+          <p>Facchinits, uno sviluppatore indipendente con sede in Italia. Domande e idee sono benvenute a <a href="mailto:postmaster@facchinits.it">postmaster@facchinits.it</a>.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" aria-labelledby="cta-title">
+    <div class="wrap">
+      <h2 id="cta-title">Provala sul tuo telefono</h2>
+      <p class="intro" style="margin-left:auto;margin-right:auto">Gratis, senza account, senza pubblicità.</p>
+      <div class="stores">
+        <a class="btn btn-light" href="https://play.google.com/store/apps/details?id=com.ts.memoryai">
+          <svg class="ic" aria-hidden="true"><use href="#i-play"/></svg>
+          <span><small>Disponibile su</small><span class="t">Google Play</span></span>
+        </a>
+        <a class="btn btn-ghost" href="https://apps.apple.com/app/memoryai/id6758719586">
+          <svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>
+          <span><small>Scarica su</small><span class="t">App Store</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Facchinits</span>
+    <nav aria-label="Piè di pagina">
+      <a href="https://alessandrofacchini.github.io/memoryai-privacy/privacy-policy-it">Informativa sulla privacy</a>
+      <a href="https://github.com/alessandrofacchini/memoryai-feedback">Feedback</a>
+      <a href="mailto:postmaster@facchinits.it">Contatti</a>
+      <a href="../index.html" hreflang="en" lang="en">English</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
