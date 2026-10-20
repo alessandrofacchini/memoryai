@@ -194,6 +194,9 @@ h2 { font-size: clamp(28px, 3.6vw, 40px); line-height: 1.15; letter-spacing: -0.
 .cta .stores { justify-content: center; }
 .cta .btn-light { background: var(--navy); color: #fff; }
 .cta .btn-ghost { background: transparent; color: var(--text); border-color: var(--line); }
+.cta .listed { color: var(--muted); font-size: 15px; margin: 32px 0 10px; }
+.cta .badge-link { display: inline-block; border-radius: 9px; }
+.cta .badge-link img { display: block; }
 
 .site-footer { background: var(--navy); color: #c7d4ea; padding: 36px 0; font-size: 15px; }
 .site-footer .wrap { display: flex; flex-wrap: wrap; gap: 14px 24px; align-items: center; justify-content: space-between; }
