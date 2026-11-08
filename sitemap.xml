@@ -10,4 +10,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://alessandrofacchini.github.io/memoryai/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://alessandrofacchini.github.io/memoryai/it/"/>
   </url>
+  <url>
+    <loc>https://alessandrofacchini.github.io/memoryai/connect/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alessandrofacchini.github.io/memoryai/connect/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://alessandrofacchini.github.io/memoryai/it/connect/"/>
+  </url>
+  <url>
+    <loc>https://alessandrofacchini.github.io/memoryai/it/connect/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alessandrofacchini.github.io/memoryai/connect/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://alessandrofacchini.github.io/memoryai/it/connect/"/>
+  </url>
 </urlset>

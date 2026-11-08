@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Collega il tuo computer — MemoryAI</title>
+  <meta name="description" content="Chatta da MemoryAI con un modello più grande che gira sul tuo PC o Mac: come preparare Ollama o LM Studio su Windows, macOS e Linux perché il telefono lo trovi sulla Wi‑Fi di casa.">
+  <meta name="theme-color" content="#0b1a3a">
+  <link rel="icon" type="image/png" sizes="64x64" href="../../assets/img/icon-64.png">
+  <link rel="apple-touch-icon" href="../../assets/img/icon-192.png">
+  <link rel="canonical" href="https://alessandrofacchini.github.io/memoryai/it/connect/">
+  <link rel="alternate" hreflang="en" href="https://alessandrofacchini.github.io/memoryai/connect/">
+  <link rel="alternate" hreflang="it" href="https://alessandrofacchini.github.io/memoryai/it/connect/">
+  <link rel="alternate" hreflang="x-default" href="https://alessandrofacchini.github.io/memoryai/connect/">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://alessandrofacchini.github.io/memoryai/it/connect/">
+  <meta property="og:title" content="Collega il tuo computer — MemoryAI">
+  <meta property="og:description" content="Prepara Ollama o LM Studio su Windows, macOS o Linux e chatta con i suoi modelli da MemoryAI sulla Wi‑Fi di casa.">
+  <meta property="og:image" content="https://alessandrofacchini.github.io/memoryai/assets/img/icon-512.png">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    pre { background: #0b1a3a; color: #e8eefc; padding: 12px 14px; border-radius: 10px; overflow-x: auto; font-size: 0.92em; line-height: 1.5; margin: 8px 0 14px; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    p code, li code { background: rgba(11,26,58,.08); padding: 1px 5px; border-radius: 5px; }
+    .steps { counter-reset: step; list-style: none; padding: 0; margin: 0; }
+    .steps > li { counter-increment: step; position: relative; padding: 0 0 18px 44px; }
+    .steps > li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 30px; height: 30px; border-radius: 50%; background: rgba(11,26,58,.1); display: flex; align-items: center; justify-content: center; font-weight: 600; }
+    .steps h3 { margin: 2px 0 6px; }
+    .os-nav { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 18px; }
+    .os-nav a { padding: 8px 14px; border-radius: 999px; background: rgba(11,26,58,.08); text-decoration: none; font-weight: 600; }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html"><img src="../../assets/img/icon-192.png" alt="" width="34" height="34">MemoryAI</a>
+    <nav class="nav" aria-label="Principale">
+      <a href="../index.html">Home</a>
+      <a href="#phone">Sul telefono</a>
+      <a href="#windows">Windows</a>
+      <a href="#macos">macOS</a>
+      <a href="#linux">Linux</a>
+      <a class="lang" href="../../connect/index.html" hreflang="en" lang="en">English</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section aria-labelledby="title">
+    <div class="wrap">
+      <p class="kicker">Un computer sulla tua rete</p>
+      <h2 id="title">Chatta con un modello più grande che gira sul tuo PC o Mac</h2>
+      <p class="intro">MemoryAI può usare un modello che gira su un computer della tua Wi‑Fi di casa: il telefono trova il computer, ne elenca i modelli e chatta con loro, e niente esce dalla tua rete. Lato telefono bastano quattro tocchi. Lato computer i passi sono qui sotto, per Windows, macOS e Linux — gli stessi della checklist nella app, messi qui perché tu possa leggerli sul computer mentre li segui.</p>
+      <p class="note">Funziona con <strong>Ollama</strong> (gratuito, open source) o <strong>LM Studio</strong>. Un modello da 3–8 miliardi di parametri gira bene su un portatile recente con 16 GB di memoria; i modelli piccoli come <code>qwen2.5:1.5b</code> girano quasi ovunque.</p>
+    </div>
+  </section>
+
+  <section id="phone" class="alt" aria-labelledby="phone-title">
+    <div class="wrap">
+      <h2 id="phone-title">Sul telefono</h2>
+      <ul class="checks">
+        <li><span>Apri la tab <strong>Modelli</strong> e tocca <strong>Collega un computer</strong>.</span></li>
+        <li><span>Tocca <strong>Cerca sulla rete</strong>. Il telefono prova gli indirizzi della tua Wi‑Fi per qualche secondo — non parte nulla finché non tocchi.</span></li>
+        <li><span>Tocca <strong>Collega</strong> sul computer trovato. I suoi modelli compaiono nella tab Modelli con l'etichetta <strong>LAN</strong>: tocca <strong>Usa</strong> su uno e chatta come sempre.</span></li>
+        <li><span>Se non trova nulla, la app apre la sua checklist; il pulsante <strong>Prova</strong> accanto a un indirizzo scritto a mano ti dice quale passo manca.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="windows" aria-labelledby="windows-title">
+    <div class="wrap">
+      <h2 id="windows-title">Windows</h2>
+      <nav class="os-nav" aria-label="Sistema operativo"><a href="#windows">Windows</a><a href="#macos">macOS</a><a href="#linux">Linux</a></nav>
+      <ol class="steps">
+        <li><h3>Installa Ollama o LM Studio</h3><p>Scarica Ollama da <a href="https://ollama.com/download">ollama.com/download</a> (o LM Studio da <a href="https://lmstudio.ai">lmstudio.ai</a>) e aprilo una volta.</p></li>
+        <li><h3>Scarica un modello</h3><p>In PowerShell o nel Prompt dei comandi:</p><pre><code>ollama pull qwen2.5:1.5b</code></pre><p>Qualsiasi modello di <a href="https://ollama.com/library">ollama.com/library</a> si scarica allo stesso modo, per esempio <code>ollama pull llama3.2:3b</code>.</p></li>
+        <li><h3>Fallo ascoltare sulla rete</h3><p>Di default Ollama risponde solo al computer stesso. Imposta la variabile, poi chiudi Ollama dall'area di notifica e riaprilo:</p><pre><code>setx OLLAMA_HOST 0.0.0.0</code></pre><p>LM Studio: <em>Developer → Server</em>, attiva <em>Serve on local network</em>.</p></li>
+        <li><h3>Apri il firewall</h3><p>PowerShell <strong>come amministratore</strong>:</p><pre><code>New-NetFirewallRule -DisplayName "Ollama" -Direction Inbound -Protocol TCP -LocalPort 11434 -Action Allow</code></pre><p>Per LM Studio usa la porta <code>1234</code> al posto di <code>11434</code>.</p></li>
+        <li><h3>Stessa Wi‑Fi, niente VPN</h3><p>Telefono e computer sulla stessa rete. Una rete ospiti, una VPN da una delle due parti o un hotspot del telefono li tengono separati.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="macos" class="alt" aria-labelledby="macos-title">
+    <div class="wrap">
+      <h2 id="macos-title">macOS</h2>
+      <nav class="os-nav" aria-label="Sistema operativo"><a href="#windows">Windows</a><a href="#macos">macOS</a><a href="#linux">Linux</a></nav>
+      <ol class="steps">
+        <li><h3>Installa Ollama o LM Studio</h3><p>Scarica Ollama da <a href="https://ollama.com/download">ollama.com/download</a> (o LM Studio da <a href="https://lmstudio.ai">lmstudio.ai</a>) e aprilo una volta.</p></li>
+        <li><h3>Scarica un modello</h3><p>Nel Terminale:</p><pre><code>ollama pull qwen2.5:1.5b</code></pre></li>
+        <li><h3>Fallo ascoltare sulla rete</h3><p>Imposta la variabile, poi chiudi Ollama dalla barra dei menu e riaprilo:</p><pre><code>launchctl setenv OLLAMA_HOST 0.0.0.0</code></pre><p>LM Studio: <em>Developer → Server</em>, attiva <em>Serve on local network</em>.</p></li>
+        <li><h3>Apri il firewall</h3><p>macOS chiede al primo collegamento: consenti a Ollama (o LM Studio) di accettare connessioni in entrata. Se il firewall è spento in <em>Impostazioni di Sistema → Rete → Firewall</em>, non c'è nulla da fare.</p></li>
+        <li><h3>Stessa Wi‑Fi, niente VPN</h3><p>Telefono e computer sulla stessa rete. Una rete ospiti, una VPN da una delle due parti o un hotspot del telefono li tengono separati.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="linux" aria-labelledby="linux-title">
+    <div class="wrap">
+      <h2 id="linux-title">Linux</h2>
+      <nav class="os-nav" aria-label="Sistema operativo"><a href="#windows">Windows</a><a href="#macos">macOS</a><a href="#linux">Linux</a></nav>
+      <ol class="steps">
+        <li><h3>Installa Ollama</h3><p>In un terminale:</p><pre><code>curl -fsSL https://ollama.com/install.sh | sh</code></pre><p>LM Studio per Linux è un AppImage da <a href="https://lmstudio.ai">lmstudio.ai</a>.</p></li>
+        <li><h3>Scarica un modello</h3><pre><code>ollama pull qwen2.5:1.5b</code></pre></li>
+        <li><h3>Fallo ascoltare sulla rete</h3><p>Per una sessione:</p><pre><code>OLLAMA_HOST=0.0.0.0 ollama serve</code></pre><p>Per il servizio installato dallo script, imposta la variabile una volta per tutte:</p><pre><code>sudo systemctl edit ollama
+# aggiungi queste due righe, salva, poi:
+[Service]
+Environment="OLLAMA_HOST=0.0.0.0"
+sudo systemctl restart ollama</code></pre></li>
+        <li><h3>Apri il firewall</h3><p>Con ufw (Ubuntu, Debian):</p><pre><code>sudo ufw allow 11434/tcp</code></pre><p>Con firewalld (Fedora):</p><pre><code>sudo firewall-cmd --permanent --add-port=11434/tcp &amp;&amp; sudo firewall-cmd --reload</code></pre></li>
+        <li><h3>Stessa Wi‑Fi, niente VPN</h3><p>Telefono e computer sulla stessa rete. Una rete ospiti, una VPN da una delle due parti o un hotspot del telefono li tengono separati.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="alt" aria-labelledby="check-title">
+    <div class="wrap">
+      <h2 id="check-title">Verifica</h2>
+      <ul class="checks">
+        <li><span>Sul computer apri <code>http://localhost:11434</code> in un browser: la pagina dice <em>Ollama is running</em>.</span></li>
+        <li><span>Nel browser del telefono apri <code>http://</code> seguito dall'indirizzo del computer e da <code>:11434</code> (per esempio <code>http://192.168.1.10:11434</code>): la stessa riga. Se il browser del telefono non riceve nulla, di mezzo c'è il firewall o la rete — i passi da 3 a 5.</span></li>
+        <li><span>In MemoryAI tocca di nuovo <strong>Cerca sulla rete</strong>, oppure scrivi l'indirizzo e tocca <strong>Prova</strong>: la prova dice quale passo manca.</span></li>
+      </ul>
+      <h2>Privacy</h2>
+      <p>La app parla col tuo computer solo sulla tua rete privata (indirizzi che iniziano con 192.168, 10 o 172.16–31) e mai con un indirizzo pubblico. Le tue domande e le risposte del modello viaggiano tra il telefono e il computer, dentro casa tua, e da nessun'altra parte. Una chiave API, quando un server la chiede, resta nella memoria sicura del telefono.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Facchinits</span>
+    <nav aria-label="Piè di pagina">
+      <a href="../index.html">MemoryAI</a>
+      <a href="https://alessandrofacchini.github.io/memoryai-privacy/">Privacy policy</a>
+      <a href="https://github.com/alessandrofacchini/memoryai-feedback">Feedback</a>
+      <a href="mailto:postmaster@facchinits.it">Contatti</a>
+      <a href="../../connect/index.html" hreflang="en" lang="en">English</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
